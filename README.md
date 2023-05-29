@@ -1,7 +1,16 @@
 # Stable Diffusion web UI
 A browser interface based on Gradio library for Stable Diffusion.
 
+## Note
+For users in mainland China, be sure to change the github settings:
+```
+pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+pip config set global.trusted-host mirrors.aliyun.com
+```
+Also, add `ghproxy.com/` after `git+` at the `prepare_environment()` function in `modules/launch_utils.py`.
+
 ![](screenshot.png)
+
 
 ## Features
 [Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
